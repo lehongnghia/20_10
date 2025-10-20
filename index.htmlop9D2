@@ -1137,7 +1137,11 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Hôm nay là ngày 20/10 anh chúc em luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha";
+        const textLetterP = "Nhân ngày Phụ nữ Việt Nam 20/10, em xin gửi đến cô Trịnh Thị Hạnh cùng tất cả các bạn nữ lớp 9D2 những lời chúc chân thành và tốt đẹp nhất!
+Chúc cô luôn mạnh khỏe, hạnh phúc và mãi giữ nụ cười tươi tắn trên môi. Cảm ơn cô vì luôn tận tâm, dịu dàng và hết lòng dạy dỗ chúng em trong suốt thời gian qua.
+Chúc các bạn nữ lớp 9D2 luôn xinh đẹp, học giỏi và ngày càng tự tin tỏa sáng như những bông hoa rực rỡ trong vườn xuân.
+💖 Mong cô và các bạn sẽ có một ngày 20/10 thật ý nghĩa và tràn đầy niềm vui! 💐
+— Nguyên Đình Thành – Tập thể lớp 9D2 kính chúc 🌸";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
