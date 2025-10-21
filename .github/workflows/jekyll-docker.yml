@@ -1,0 +1,27 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+echo "# Nguy-n-nh-Th-nh" >> README.md
+git init
+git thêm README.md
+git commit -m "cam kết đầu tiên"
+chi nhánh git -M chính
+nguồn gốc thêm từ xa git https://github.com/thanhbk2802-dotcom/Nguy-n-nh-Th-nh.git
+git push -u nguồn gốc chính
